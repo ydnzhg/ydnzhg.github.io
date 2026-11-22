@@ -11,7 +11,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Andy W. Zhang">
 <meta name="twitter:description" content="Senior at MIT double majoring in Computer Science and Mathematics. Incoming Software Engineer at Cursor/xAI. MIT Fencing Team Captain.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSIzMiIgeT0iNDciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJUaW1lcyBOZXcgUm9tYW4sIFRpbWVzLCBzZXJpZiIgZm9udC1zaXplPSI0MiIgbGV0dGVyLXNwYWNpbmc9Ii0yIiBmaWxsPSIjMDAwIj5BWjwvdGV4dD48L3N2Zz4K">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIGZpbGw9IiMwMDAiLz48dGV4dCB4PSIzMiIgeT0iNTEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJUaW1lcyBOZXcgUm9tYW4sIFRpbWVzLCBzZXJpZiIgZm9udC1zaXplPSI1NiIgZmlsbD0iI2ZmZiI+QTwvdGV4dD48L3N2Zz4=">
 <style>
   body {
     font-family: "Times New Roman", Times, serif;
@@ -31,7 +31,7 @@
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.3fr);
+    grid-template-columns: minmax(0, 0.55fr) minmax(0, 1fr) minmax(0, 1.25fr);
     gap: 48px;
     padding: 24px 28px;
     max-width: 1200px;
@@ -41,17 +41,14 @@
   h2 { font-size: 15px; font-weight: bold; margin: 0 0 3px; }
   h2.next { margin-top: 16px; }
   p { margin: 0 0 8px; }
-  a { color: #000; text-decoration: underline; text-decoration-color: #999; text-underline-offset: 2px;
-      background: linear-gradient(#fde68a, #fde68a) 0 88% / 0 55% no-repeat;
-      transition: background-size .3s ease; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-  a:hover { background-size: 100% 55%; }
+  a { color: #000; text-decoration: underline; text-decoration-color: #999; text-underline-offset: 2px; }
+  a:hover { text-decoration-color: #000; }
   .links a { margin-right: 8px; }
   .row { display: flex; justify-content: space-between; gap: 16px; padding: 3px 0; border-bottom: 1px solid #e8e8e8; }
   .row.last { border-bottom: none; }
   .title { font-style: italic; color: #333; }
   .date { color: #777; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
-  @media (max-width: 1000px) { main { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 600px)  { main { grid-template-columns: 1fr; gap: 22px; padding: 32px 24px; } }
+  @media (max-width: 1000px) { main { grid-template-columns: 1fr; gap: 22px; padding: 32px 24px; max-width: 560px; } }
 </style>
 </head>
 <body>
@@ -59,13 +56,12 @@
 
 <section>
   <h1>Andy W. Zhang</h1>
+  <p>Math + CS @ MIT</p>
   <p class="links">
     <a href="mailto:azhangw@mit.edu">Email</a>
     <a href="https://linkedin.com/in/azhangw">LinkedIn</a>
   </p>
 
-  <h2 class="next">About</h2>
-  <p>Senior at MIT double majoring in Computer Science (6&#8209;3) and Mathematics (18). Incoming Software Engineer at Cursor/xAI in San Francisco. MIT Fencing Team Captain.</p>
 </section>
 
 <section>
