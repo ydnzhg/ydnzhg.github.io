@@ -31,7 +31,7 @@
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(0, 0.55fr) minmax(0, 1fr) minmax(0, 1.25fr);
+    grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr) minmax(0, 1fr);
     gap: 48px;
     padding: 24px 28px;
     max-width: 1200px;
@@ -40,15 +40,17 @@
   h1 { font-size: 18px; font-weight: bold; margin: 0; }
   h2 { font-size: 15px; font-weight: bold; margin: 0 0 3px; }
   h2.next { margin-top: 16px; }
+  .links + h2.next { margin-top: 24px; }
   p { margin: 0 0 8px; }
   a { color: #000; text-decoration: underline; text-decoration-color: #999; text-underline-offset: 2px; }
   a:hover { text-decoration-color: #000; }
   .links a { margin-right: 8px; }
-  .row { display: flex; justify-content: space-between; gap: 16px; padding: 3px 0; border-bottom: 1px solid #e8e8e8; }
+  .row { padding: 3px 0; border-bottom: 1px solid #e8e8e8; }
+  .top { display: flex; justify-content: space-between; gap: 16px; }
   .row.last { border-bottom: none; }
   .title { font-style: italic; color: #333; }
   .date { color: #777; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
-  @media (max-width: 1000px) { main { grid-template-columns: 1fr; gap: 22px; padding: 32px 24px; max-width: 560px; } }
+  @media (max-width: 1100px) { main { grid-template-columns: 1fr; gap: 21px; padding: 32px 24px; max-width: 560px; } }
 </style>
 </head>
 <body>
@@ -66,18 +68,18 @@
 
 <section>
   <h2>Work</h2>
-  <div class="row"><span>Cursor/xAI<br><span class="title">Grok Bot</span></span><span class="date">2027</span></div>
-  <div class="row"><span>Databricks<br><span class="title">Multi-Statement Transactions</span></span><span class="date">2026</span></div>
-  <div class="row last"><span>Amazon Web Services<br><span class="title">RDS Performance Insights</span></span><span class="date">2025</span></div>
+  <div class="row"><div class="top"><span>Cursor/xAI</span><span class="date">2027</span></div><div class="title">Grok Bot</div></div>
+  <div class="row"><div class="top"><span>Databricks</span><span class="date">2026</span></div><div class="title">Multi-Statement Transactions</div></div>
+  <div class="row last"><div class="top"><span>Amazon Web Services</span><span class="date">2025</span></div><div class="title">RDS Performance Insights</div></div>
 </section>
 
 <section>
   <h2>Fencing</h2>
-  <div class="row"><span><a href="https://mitathletics.com/sports/mens-fencing/roster/andy-zhang/13731">MIT Fencing</a><br><span class="title">Captain, Men's Foil</span></span><span class="date">2023 &ndash; Present</span></div>
-  <div class="row"><span><a href="https://mitathletics.com/news/2026/3/24/mens-fencing-zhang-and-liu-named-to-usfca-division-iii-all-america-team.aspx">All-American, First Team</a><br><span class="title">USFCA Division III</span></span><span class="date">2026</span></div>
-  <div class="row"><span><a href="https://mitathletics.com/news/2025/3/28/mens-fencing-no-4-mens-fencing-places-three-on-usfca-division-iii-all-america-team.aspx">All-American, Second Team</a><br><span class="title">USFCA Division III</span></span><span class="date">2024, 2025</span></div>
-  <div class="row"><span>NCAA Championships<br><span class="title">22nd Place</span></span><span class="date">2024</span></div>
-  <div class="row last"><span>USA Fencing<br><span class="title">Best National Rankings: 29th Junior, 44th Senior</span></span><span class="date">2022</span></div>
+  <div class="row"><div class="top"><span><a href="https://mitathletics.com/sports/mens-fencing/roster/andy-zhang/13731">MIT Fencing</a></span><span class="date">2023 &ndash; Present</span></div><div class="title">Captain, Men's Foil</div></div>
+  <div class="row"><div class="top"><span><a href="https://mitathletics.com/news/2026/3/24/mens-fencing-zhang-and-liu-named-to-usfca-division-iii-all-america-team.aspx">All-American, First Team</a></span><span class="date">2026</span></div><div class="title">USFCA Division III</div></div>
+  <div class="row"><div class="top"><span><a href="https://mitathletics.com/news/2025/3/28/mens-fencing-no-4-mens-fencing-places-three-on-usfca-division-iii-all-america-team.aspx">All-American, Second Team</a></span><span class="date">2024, 2025</span></div><div class="title">USFCA Division III</div></div>
+  <div class="row"><div class="top"><span>NCAA Championships</span><span class="date">2024</span></div><div class="title">22nd Place</div></div>
+  <div class="row last"><div class="top"><span>USA Fencing</span><span class="date">2022</span></div><div class="title">Best National Rankings: 29th Junior, 44th Senior</div></div>
 </section>
 
 </main>
